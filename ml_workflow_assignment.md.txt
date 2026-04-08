@@ -1,0 +1,16 @@
+Task 1
+Identify which column in the dataset is the label, and which column, if included as a feature, would introduce data leakage. For each, write one sentence justifying your choice.
+
+* Label: The column repeat_purchase_flag is the label because it represents the target outcome the model is intended to predict (whether or not a 30-day repeat purchase occurred).
+* Data Leakage: The column discount_used_on_repeat_order would introduce data leakage because it contains information about the repeat purchase itself, which would not be known at the time the model is making a prediction for a future event.
+
+Task 2
+Your manager skips straight to training a gradient boosting model. Suggest two steps from the complete ML workflow that should have been completed first, and briefly explain why each step matters before jumping to a complex model.
+
+* Exploratory Data Analysis (EDA): This step is essential to understand the distribution of variables, identify outliers, and detect correlations between features; it ensures the data is clean and helps determine if a complex model is even necessary or if the underlying patterns are simple.
+* Feature Engineering and Scaling: Since the dataset includes diverse units like "days elapsed" and "value in INR," creating more meaningful features or normalizing numerical ranges helps the model converge faster and more accurately, ensuring the gradient boosting algorithm can effectively capture the relationships within the data.
+
+
+ML-Workflow-Assignment ----Radhika
+
+
